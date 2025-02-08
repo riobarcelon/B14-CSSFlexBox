@@ -34,11 +34,13 @@ body {
 }
 
 .container {
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    grid-template-rows: repeat(5, 1fr);
     max-width: 800px;
     min-height: 400px;
     margin-inline: auto;
-    display: flex;
-    gap: 1rem;
+    gap: 8px;
     justify-content: center;
     align-items: center;
     flex-flow: row wrap;
@@ -54,7 +56,81 @@ body {
     border-style: groove;
     border-width: 2px;
     margin-top: 50px;
-    
+    grid-column: span 3 / span 3;
+    grid-row: span 5 / span 5;
+}
+
+.div-section1 {
+    text-align: left;
+    background-color: white;
+    width: 350px;
+    height: 285px;
+    border-color: #000;
+    border-style: groove;
+    border-width: 2px;
+    margin-top: 50px;
+    grid-column: span 3 / span 3;
+    grid-row: span 5 / span 5;
+    grid-column-start: 4;
+}
+
+.div-section2 {
+    text-align: left;
+    background-color: white;
+    width: 350px;
+    height: 285px;
+    border-color: #000;
+    border-style: groove;
+    border-width: 2px;
+    margin-top: 50px;
+    grid-column: span 3 / span 3;
+    grid-row: span 5 / span 5;
+    grid-column-start: 7;
+}
+
+.div-section3 {
+    text-align: left;
+    background-color: white;
+    width: 350px;
+    height: 285px;
+    border-color: #000;
+    border-style: groove;
+    border-width: 2px;
+    margin-top: 50px;
+    grid-column: span 3 / span 3;
+    grid-row: span 5 / span 5;
+    grid-row-start: 6;
+}
+
+.div-section4 {
+    text-align: left;
+    background-color: white;
+    width: 350px;
+    height: 285px;
+    border-color: #000;
+    border-style: groove;
+    border-width: 2px;
+    margin-top: 50px;
+    grid-column: span 3 / span 3;
+    grid-row: span 5 / span 5;
+    grid-column-start: 4;
+    grid-row-start: 6;
+}
+
+
+.div-section5 {
+    text-align: left;
+    background-color: white;
+    width: 350px;
+    height: 285px;
+    border-color: #000;
+    border-style: groove;
+    border-width: 2px;
+    margin-top: 50px;
+    grid-column: span 3 / span 3;
+    grid-row: span 5 / span 5;
+    grid-column-start: 7;
+    grid-row-start: 6;
 }
 
 #context-title {
